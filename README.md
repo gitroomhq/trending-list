@@ -7,7 +7,7 @@ Every hour it scrapes GitHub main feed and language feed and send you an email i
 It uses
 - PostgresSQL (Prisma)
 - NextJS
-- TriggerDev (Background Jobs)
-- Novu
+- [Trigger.dev](https://github.com/triggerdotdev/trigger.dev) (Background Jobs)
+- [Novu](https://github.com/novuhq/novu)
 
 Just copy `.env.example` to `.env` and fill the missing values.
