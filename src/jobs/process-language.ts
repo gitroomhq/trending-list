@@ -17,7 +17,7 @@ client.defineJob({
   }),
   //this function is run when the custom event is received
   run: async (payload, io, ctx) => {
-    const {data} = await axios.get(`https://github.com/trending/${payload.language.replace('#', '%23')}`);
+    const {data} = await axios.get(`https://github.com/trending/${payload.language.replace('#', '%23')}?spoken_language_code=`);
     const dom = new JSDOM(data);
 
     const list = Array.from(dom.window.document.querySelectorAll('article h2')).map((p, index) => ({
